@@ -1,0 +1,24 @@
+.list {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.item::before {
+  font-family: 'Material Icons';
+  content: '\e937';
+  height: 100%;
+  position: absolute;
+  left: -25px;
+  top: 0;
+  color: #0c0b0b;
+}

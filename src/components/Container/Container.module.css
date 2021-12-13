@@ -1,0 +1,13 @@
+.container {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid rgb(156, 139, 125);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 550px;
+  }
+}
