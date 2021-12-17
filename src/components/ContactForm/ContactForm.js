@@ -4,6 +4,11 @@ import { nanoid } from 'nanoid';
 import s from './ContactForm.module.css';
 
 class ContactForm extends Component {
+
+    static propTypes = {
+        onSubmit: PropTypes.func.isRequired,
+    };
+    
     state = {
         name: '',
         number: ''
@@ -67,6 +72,3 @@ class ContactForm extends Component {
 }
 export default ContactForm
 
-ContactForm.propTypes = {
-   onSubmit: PropTypes.func.isRequired,
-}
